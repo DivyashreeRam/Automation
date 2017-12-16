@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Executing testA]]>
+    </line>
+    <line>
+      <![CDATA[testAstatus is1]]>
+    </line>
+    <line>
+      <![CDATA[Executing test B]]>
+    </line>
+    <line>
+      <![CDATA[testBstatus is2]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="47" started-at="2017-12-16T05:46:35Z" finished-at="2017-12-16T05:46:35Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="47" started-at="2017-12-16T05:46:35Z" finished-at="2017-12-16T05:46:35Z">
+      <class name="generic.Demo">
+        <test-method status="PASS" signature="testA()[pri:0, instance:generic.Demo@3043fe0e]" name="testA" duration-ms="16" started-at="2017-12-16T11:16:35Z" finished-at="2017-12-16T11:16:35Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Executing testA]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testA -->
+        <test-method status="FAIL" signature="testB()[pri:0, instance:generic.Demo@3043fe0e]" name="testB" duration-ms="0" started-at="2017-12-16T11:16:35Z" finished-at="2017-12-16T11:16:35Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: nullat org.testng.Assert.fail(Assert.java:96)at org.testng.Assert.fail(Assert.java:103)at generic.Demo.testB(Demo.java:23)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Executing test B]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testB -->
+        <test-method status="PASS" signature="am(org.testng.ITestResult)[pri:0, instance:generic.Demo@3043fe0e]" name="am" is-config="true" duration-ms="0" started-at="2017-12-16T11:16:35Z" finished-at="2017-12-16T11:16:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testA status=SUCCESS method=Demo.testA()[pri:0, instance:generic.Demo@3043fe0e] output=Executing testA]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[testAstatus is1]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- am -->
+        <test-method status="PASS" signature="am(org.testng.ITestResult)[pri:0, instance:generic.Demo@3043fe0e]" name="am" is-config="true" duration-ms="0" started-at="2017-12-16T11:16:35Z" finished-at="2017-12-16T11:16:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testB status=FAILURE method=Demo.testB()[pri:0, instance:generic.Demo@3043fe0e] output=Executing test B]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[testBstatus is2]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- am -->
+      </class> <!-- generic.Demo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
